@@ -1,0 +1,9 @@
+streamlit
+tensorflow
+huggingface_hub
+Pillow
+numpy
+plotly
+pandas
+matplotlib
+tqdm
