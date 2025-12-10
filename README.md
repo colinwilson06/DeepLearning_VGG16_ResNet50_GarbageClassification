@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # ♻️ DeepLearning_VGG16_ResNet50_GarbageClassification
 ### End-to-End Deep Learning System for Automated Waste Classification (12 Classes)
 
@@ -35,7 +34,7 @@ ResNet-50 achieved the strongest generalization performance, establishing itself
 | Model | Transfer Learning | Test Accuracy | Weighted F1-Score | Deployment Status |
 |------|------------------|--------------:|------------------:|-------------------|
 | VGG16 | Fine-tuned (ImageNet) | 0.950 | 0.95 | Baseline |
-| **ResNet-50** | Fine-tuned (ImageNet) | **0.960** | **0.96** | **Production Candidate** |
+| ResNet-50 | Fine-tuned (ImageNet) | 0.960 | 0.96 | Production Candidate |
 
 🟩 **ResNet-50 demonstrates superior feature abstraction through residual connections**, enabling more stable deep-layer gradient propagation.
 
@@ -67,14 +66,14 @@ Both architectures follow a unified fine-tuning workflow:
 ### **1. Training Curves (ResNet-50)**  
 Smooth convergence and low generalization gap indicate proper regularization.
 
-![ResNet Plot](assets/ResNet50_Plot.png)
+![ResNet Plot](assets/ResNet50 Plot.png)
 
 ---
 
 ### **2. Confusion Matrix (ResNet-50)**  
 Shows strong diagonal dominance; remaining errors originate from **classes with overlapping visual features**.
 
-![ResNet CM](assets/Confusion_Matrix_ResNet50.png)
+![ResNet CM](assets/Confusion Matrix - ResNet50.png)
 
 ---
 
@@ -163,6 +162,9 @@ The Streamlit service will automatically:
 - Run TTA + model inference
 - Display Top-5 confidence visualization
 
+🌐 Live Demo
+You can interact with the live deployed classification application here:
+![Live Streamlit Demo Link](https://dlgarbageclassification.streamlit.app/)
 
 🔭 Future Engineering Enhancements
 - Add YOLO-based Object Detection to support multi-object scenes
