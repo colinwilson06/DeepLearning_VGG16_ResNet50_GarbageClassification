@@ -1,8 +1,4 @@
-#!/bin/bash
 
-# Define the README content using a 'here document' for maximum fidelity
-
-cat << 'EOF' > README.md
 # 🧠 DeepLearning_VGG16_ResNet50_GarbageClassification
 ## End-to-End **Residual Network (ResNet)** Implementation for Automated Waste Classification
 
