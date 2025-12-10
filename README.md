@@ -31,10 +31,10 @@ The project represents an **end-to-end MLOps approach**, integrating:
 The models were evaluated on an **independent 10% test split**.  
 ResNet-50 achieved the strongest generalization performance, establishing itself as the **recommended production model**.
 
-| Model | Transfer Learning | Test Accuracy | Weighted F1-Score | Deployment Status |
-|------|------------------|--------------:|------------------:|-------------------|
-| VGG16 | Fine-tuned (ImageNet) | 0.950 | 0.95 | Baseline |
-| ResNet-50 | Fine-tuned (ImageNet) | 0.960 | 0.96 | Production Candidate |
+| Model | Transfer Learning | Test Accuracy | Weighted F1-Score |
+|------|------------------|--------------:|------------------:|
+| VGG16 | Fine-tuned (ImageNet) | 0.950 | 0.95 |
+| ResNet-50 | Fine-tuned (ImageNet) | 0.960 | 0.96 |
 
 🟩 **ResNet-50 demonstrates superior feature abstraction through residual connections**, enabling more stable deep-layer gradient propagation.
 
@@ -66,14 +66,14 @@ Both architectures follow a unified fine-tuning workflow:
 ### **1. Training Curves (ResNet-50)**  
 Smooth convergence and low generalization gap indicate proper regularization.
 
-![ResNet Plot](assets/ResNet50 Plot.png)
+![ResNet Plot](assets/ResNet50_Plot.png)
 
 ---
 
 ### **2. Confusion Matrix (ResNet-50)**  
 Shows strong diagonal dominance; remaining errors originate from **classes with overlapping visual features**.
 
-![ResNet CM](assets/Confusion Matrix - ResNet50.png)
+![ResNet CM](assets/Confusion_Matrix_ResNet50.png)
 
 ---
 
