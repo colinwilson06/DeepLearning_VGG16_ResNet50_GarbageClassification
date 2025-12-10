@@ -164,7 +164,7 @@ The Streamlit service will automatically:
 
 🌐 Live Demo
 You can interact with the live deployed classification application here:
-![Live Streamlit Demo Link](https://dlgarbageclassification.streamlit.app/)
+**[Live Streamlit Demo Link](https://dlgarbageclassification.streamlit.app/)**
 
 🔭 Future Engineering Enhancements
 - Add YOLO-based Object Detection to support multi-object scenes
